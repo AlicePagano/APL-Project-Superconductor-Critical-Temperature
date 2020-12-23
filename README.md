@@ -12,3 +12,5 @@ This project is organized in multiple directories as:
 * Utils: this folder contains useful pdf and tables for performing the analysis and build the experimental setup
 
 * Paper: this folder contains the latex report
+
+* Experimental Notes: notes taken for preparing the experimental setup
