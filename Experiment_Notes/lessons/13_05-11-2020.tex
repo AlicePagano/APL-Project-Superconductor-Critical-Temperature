@@ -1,0 +1,33 @@
+\documentclass[../main/main.tex]{subfiles}
+
+\newdate{date}{05}{11}{2020}
+
+
+\begin{document}
+
+
+\chapter{Fase di misura}
+
+\section{Test preliminare}
+
+\marginpar{ \textbf{Laboratory 13.} \\  \displaydate{date}. \\ Compiled:  \today.}
+
+Dopo che siamo riuscite a risolvere il problema del ponte (termometro), abbiamo iniziato a testare il circuito. Abbiamo acceso il criostato. Nella prima prova di raffreddamento abbiamo notato che la temperatura minima ottenuta nella camera (misurata con il Pt100 del dito freddo) risulta essere:
+\begin{equation*}
+  T_{min}^{Pt100} = 63 \, \text{K}
+\end{equation*}
+Mentre la temperatura ottenuta dalla calibrazione del ponte:
+\begin{equation*}
+  T_{min}^{ponte} = 120 \, \text{K}
+\end{equation*}
+Per misurare quest'ultima abbiamo calibrato il ponte e misurato la resistenza dell'helipot. In queesto caso l'helipot misurava 37 giri, che corrispondono guardando la tabella a circa quella temperatura.
+Invece vediamo che la tensione misurata risulta essere:
+\begin{equation*}
+  V_{sc} = 80 \, \text{mV}
+\end{equation*}
+L'acquisizione è stata salvata come "prova2.csv", in particolare in questo dataset fino a tempo 3200 abbiamo sbagliato, in quanto non avevamo acceso il generatore per dare segnale all'amplificatore.
+
+
+
+
+\end{document}

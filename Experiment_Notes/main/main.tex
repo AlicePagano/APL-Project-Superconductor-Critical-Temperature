@@ -1,0 +1,85 @@
+\documentclass[11pt, a4paper, twoside, openright]{book}
+\usepackage{subfiles}
+
+\input{../macro/packages.tex}
+\input{../macro/settings.tex}
+\input{../macro/new_commands.tex}
+
+
+
+
+
+
+
+
+\begin{document}
+
+
+%%%%%%FRONTESPIZIO%%%%%%
+%Reset the geometry of frontespizio
+\newgeometry{inner=20mm,
+            outer=20mm,% = marginparsep + marginparwidth
+                       %   + 5mm (between marginpar and page border)
+            top=20mm,
+            bottom=20mm,
+            marginparsep=6mm,
+            marginparwidth=30mm}
+\makeatletter
+\renewcommand{\@marginparreset}{%
+  \reset@font\small
+  \raggedright
+  \slshape
+  \@setminipage
+}
+\makeatother
+
+\frontmatter 
+\input{../frontespizio/frontespizio.tex}
+
+\tableofcontents
+
+
+\pagestyle{plain}
+
+\newgeometry{inner=20mm,
+            outer=49mm,% = marginparsep + marginparwidth
+                       %   + 5mm (between marginpar and page border)
+            top=20mm,
+            bottom=25mm,
+            marginparsep=6mm,
+            marginparwidth=30mm}
+\makeatletter
+\renewcommand{\@marginparreset}{%
+  \reset@font\small
+  \raggedright
+  \slshape
+  \@setminipage
+}
+\makeatother
+
+
+\mainmatter
+\pagestyle{fancy}
+
+
+\subfile{../lessons/01_07-10-2020.tex}
+\subfile{../lessons/02_09-10-2020.tex}
+\subfile{../lessons/03_14-10-2020.tex}
+\subfile{../lessons/04_16-10-2020.tex}
+\subfile{../lessons/05_21-10-2020.tex}
+\subfile{../lessons/06-07_23-10-2020.tex}
+\subfile{../lessons/08_28-10-2020.tex}
+\subfile{../lessons/09_29-10-2020.tex}
+\subfile{../lessons/10-11_30-10-2020.tex}
+\subfile{../lessons/12_04-11-2020.tex}
+\subfile{../lessons/13_05-11-2020.tex}
+\subfile{../lessons/14-15_06-11-2020.tex}
+\subfile{../lessons/16_11-11-2020.tex}
+\subfile{../lessons/17_12-11-2020.tex}
+
+\backmatter
+\pagestyle{plain}
+
+%\input{../bibliography/bibliography.tex}
+
+\end{document}
